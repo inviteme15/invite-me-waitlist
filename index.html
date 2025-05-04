@@ -1,10 +1,95 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=https://invite-me-waitlist.netlify.app/" />
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <p>If you are not redirected, <a href="https://invite-me-waitlist.netlify.app/">click here</a>.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invite Me – Waitlist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff5f7;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #e63946;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .features {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    .features li {
+      margin-bottom: 0.75rem;
+    }
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #e63946;
+      color: white;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #e63946;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Dating with Purpose</h1>
+    <p>Tired of ghosting and games? Invite Me helps you meet real people in real life — safely and respectfully.</p>
+
+    <form name="waitlist" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="waitlist">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <button type="submit">Join the Waitlist</button>
+    </form>
+
+    <ul class="features">
+      <li>✔ Public place meetups</li>
+      <li>✔ Verified users only</li>
+      <li>✔ Tokens for commitment</li>
+      <li>✔ Designed for safety and respect</li>
+    </ul>
+
+    <p><em>“I created Invite Me because I was tired of feeling unsafe, unseen, and exhausted by dating apps. This is something better — for all of us.”<br>– Founder of Invite Me</em></p>
+
+    <footer>
+      <a href="#">Terms</a> |
+      <a href="#">Privacy</a> |
+      <a href="#">Safety</a>
+    </footer>
+  </div>
+</body>
 </html>
